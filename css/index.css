@@ -1,10 +1,12 @@
 .head {
   height: auto;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #42815b; }
   .head .header-title {
     background-color: #bfddcd;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between; }
     .head .header-title .header-logo {
       display: flex;
@@ -16,22 +18,24 @@
         font-size: 18px;
         font-weight: 700; }
     .head .header-title .authentication {
-      height: 90px;
-      width: 180px;
+      height: auto;
+      width: auto;
       background-color: whitesmoke;
-      padding: 10px;
+      padding: 5px;
       margin-right: 15px;
       border-radius: 2%; }
-      .head .header-title .authentication p {
-        margin: 2px auto; }
+      .head .header-title .authentication .user-button {
+        display: flex;
+        justify-content: center; }
+        .head .header-title .authentication .user-button span {
+          margin: 0 2px; }
       .head .header-title .authentication a {
         text-decoration: none;
         color: #42815b; }
         .head .header-title .authentication a:hover {
           text-decoration: underline; }
   .head .search-block {
-    height: 30px;
-    background: #42815b; }
+    height: 30px; }
     .head .search-block button {
       margin-top: 5px;
       margin-right: 15px;
@@ -75,6 +79,29 @@
   .main .content {
     padding-left: 30px;
     width: 88%; }
+    .main .content .authentication-block {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; }
+      .main .content .authentication-block .auth-window {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 15px;
+        align-items: center;
+        border-radius: 2%;
+        background-color: #b2e2f5; }
+        .main .content .authentication-block .auth-window .auth-title {
+          margin-bottom: 10px;
+          font-size: 14px; }
+        .main .content .authentication-block .auth-window p {
+          margin: 5px auto; }
+        .main .content .authentication-block .auth-window button {
+          margin: 10px 0 5px 0;
+          padding: 3px 5px;
+          border: none;
+          background-color: whitesmoke; }
+          .main .content .authentication-block .auth-window button:hover {
+            background-color: #b9b9b9; }
     .main .content .ad-images {
       width: 100%;
       display: flex;
